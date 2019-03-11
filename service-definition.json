@@ -1,0 +1,28 @@
+{
+  "taskDefinition": "demo-app:4",
+  "cluster": "demo-cluster",
+  "serviceName": "demo-app",
+  "loadBalancers": [{
+    "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:919139699099:targetgroup/app-demo-target/df0f5e7b33b3bb21",
+    "containerName": "demo-app",
+    "containerPort": 3000
+  }],
+  "desiredCount": 3,
+  "launchType": "FARGATE",
+  "schedulingStrategy": "REPLICA",
+  "deploymentController": {
+    "type": "CODE_DEPLOY"
+  },
+  "networkConfiguration": {
+    "awsvpcConfiguration": {
+      "subnets": [
+        "subnet-08f5326f",
+        "subnet-6213e14c"
+      ],
+      "securityGroups": [
+        "sg-0f6a4a0206119b1b0"
+      ],
+      "assignPublicIp": "ENABLED"
+    }
+  }
+}

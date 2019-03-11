@@ -1,0 +1,12 @@
+{
+  "applicationName": "demo-app-bluegreen",
+  "deploymentGroupName": "app-demo-dg",
+  "revision": {
+      "revisionType": "S3",
+      "s3Location": {
+          "bucket": "demo-app-bluegreen",
+          "key": "appspec.yaml",
+          "bundleType": "YAML"
+      }
+  }
+}
