@@ -1,9 +1,9 @@
 {
-  "taskDefinition": "demo-app:4",
+  "taskDefinition": "demo-app:5",
   "cluster": "demo-cluster",
   "serviceName": "demo-app",
   "loadBalancers": [{
-    "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:919139699099:targetgroup/app-demo-target/df0f5e7b33b3bb21",
+    "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:919139699099:targetgroup/app-demo-target/4e8877fa4f079d37",
     "containerName": "demo-app",
     "containerPort": 3000
   }],
