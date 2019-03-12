@@ -25,6 +25,7 @@ phases:
       - echo Writing image definitions file...
       - printf '[{"name":"demo-app","imageUri":"%s"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
 artifacts:
+    type: zip
     files: 
       - imagedefinitions.json
       - appspec.yaml
