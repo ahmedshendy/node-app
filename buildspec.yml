@@ -27,4 +27,6 @@ phases:
 artifacts:
     files: 
       - imagedefinitions.json
+      - appspec.yaml
+      - demo-app-task-def.json
     discard-paths: yes
