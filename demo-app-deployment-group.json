@@ -36,7 +36,12 @@
               ],
               "prodTrafficRoute": {
                   "listenerArns": [
-                      "arn:aws:elasticloadbalancing:us-east-1:919139699099:loadbalancer/app/demo-app-alb/bed84a46f5a81f95"
+                      "arn:aws:elasticloadbalancing:us-east-1:919139699099:listener/app/demo-app-alb/09ddefcc473d65c0/c84868ded75963ab"
+                  ]
+              },
+              "testTrafficRoute": {
+                  "listenerArns": [
+                      "arn:aws:elasticloadbalancing:us-east-1:919139699099:listener/app/demo-app-alb/09ddefcc473d65c0/20cbc426678def65"
                   ]
               }
           }
