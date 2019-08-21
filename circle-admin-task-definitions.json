@@ -10,7 +10,7 @@
         }
       ],
       "name": "admin-qc",
-      "image": "869034027937.dkr.ecr.us-east-2.amazonaws.com/admin-qc:20a4d9c",
+      "image": "<IMAGE1_NAME>",
       "essential": true,
       "logConfiguration": {
         "logDriver": "awslogs",
