@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "Resources": [
+    {
+      "TargetService": {
+        "Type": "AWS::ECS::Service",
+        "Properties": {
+          "TaskDefinition": "arn:aws:ecs:us-east-2:869034027937:task-definition/admin-qc:89",
+          "LoadBalancerInfo": {
+            "ContainerName": "admin-qc",
+            "ContainerPort": 8048
+          }
+        }
+      }
+    }
+  ]
+}
