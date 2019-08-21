@@ -1,0 +1,39 @@
+{
+  "family": "admin-qc",
+  "containerDefinitions": [
+    {
+      "portMappings": [
+        {
+          "containerPort": 8048,
+          "protocol": "tcp",
+          "hostPort": 8048
+        }
+      ],
+      "name": "admin-qc",
+      "image": "869034027937.dkr.ecr.us-east-2.amazonaws.com/admin-qc:20a4d9c",
+      "essential": true,
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/admin-qc-log",
+          "awslogs-region": "us-east-2",
+          "awslogs-stream-prefix": "ecs"
+        }
+      },
+      "environment": [
+        {
+          "name": "SPRING_PROFILES_ACTIVE",
+          "value": "qc"
+        }
+      ]
+    }
+  ],
+  "cpu": "512",
+  "memory": "1024",
+  "taskRoleArn": "arn:aws:iam::869034027937:role/ecs-task-role",
+  "executionRoleArn": "arn:aws:iam::869034027937:role/ecs-task-execution-role",
+  "requiresCompatibilities": [
+    "FARGATE"
+  ],
+  "networkMode": "awsvpc"
+}
