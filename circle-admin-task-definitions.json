@@ -10,7 +10,7 @@
         }
       ],
       "name": "admin-qc",
-      "image": "<IMAGE1_NAME>",
+      "image": "<IMAGE_NAME>",
       "essential": true,
       "logConfiguration": {
         "logDriver": "awslogs",
